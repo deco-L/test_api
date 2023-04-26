@@ -1,5 +1,5 @@
 async function sendPrompt(prompt = '') {
-	let API_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+	const API_KEY = config.apikey;
 
 	// promptがない場合
 	if (!prompt) return
