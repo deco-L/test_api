@@ -1,5 +1,6 @@
 async function sendPrompt(prompt = '') {
-	const API_KEY = config.apikey;
+	require('dotenv').config();
+	const API_KEY = process.env.API_KEY;
 
 	// promptがない場合
 	if (!prompt) return
